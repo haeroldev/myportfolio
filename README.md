@@ -7,7 +7,8 @@ A modern, responsive portfolio website for a web developer working with **OutSys
 - `index.html` - Page structure and content
 - `styles.css` - UI styling, layout, and animations
 - `script.js` - Scroll reveal animation, theme toggle, and dynamic footer year
-- `harold-cv.html` - Downloadable CV file
+- `assets/Harold-CV.pdf` - Downloadable CV (replace with your real PDF)
+- `assets/avatar.jpg` - Real profile photo used in hero section
 
 ## Run Locally
 
@@ -35,6 +36,8 @@ Before publishing, update:
 - Name/brand text in `index.html`
 - Email and GitHub links in contact section
 - Project details and skills
+- Add your real CV to `assets/Harold-CV.pdf`
+- Add your real profile image to `assets/avatar.jpg`
 
 ## Notes
 
