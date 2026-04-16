@@ -6,7 +6,8 @@ A modern, responsive portfolio website for a web developer working with **OutSys
 
 - `index.html` - Page structure and content
 - `styles.css` - UI styling, layout, and animations
-- `script.js` - Scroll reveal animation and dynamic footer year
+- `script.js` - Scroll reveal animation, theme toggle, and dynamic footer year
+- `harold-cv.html` - Downloadable CV file
 
 ## Run Locally
 
