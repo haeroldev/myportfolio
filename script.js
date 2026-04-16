@@ -18,11 +18,20 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((item) => observer.observe(item));
 
 const themeToggle = document.getElementById("theme-toggle");
+const paletteSelect = document.getElementById("palette-select");
 const root = document.documentElement;
+
 const savedTheme = localStorage.getItem("theme");
+const savedPalette = localStorage.getItem("palette");
 
 if (savedTheme === "light") {
   root.setAttribute("data-theme", "light");
+}
+if (savedPalette) {
+  root.setAttribute("data-palette", savedPalette);
+  if (paletteSelect) paletteSelect.value = savedPalette;
+} else {
+  root.setAttribute("data-palette", "emerald");
 }
 
 const updateToggleIcon = () => {
@@ -42,6 +51,14 @@ if (themeToggle) {
       localStorage.setItem("theme", "light");
     }
     updateToggleIcon();
+  });
+}
+
+if (paletteSelect) {
+  paletteSelect.addEventListener("change", (e) => {
+    const value = e.target.value || "emerald";
+    root.setAttribute("data-palette", value);
+    localStorage.setItem("palette", value);
   });
 }
 
